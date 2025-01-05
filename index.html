@@ -58,58 +58,58 @@
             Ranch Burger: Sabores irresistibles cerca de ti.
         </p>
 
-        <img src="assets/img/animatedBurger.png" class="about__img1" alt="">
-        <img src="assets/img/coca.png" class="about__img2" alt="">
+        <img src="assets/img/animatedBurger.png" class="about__img1 hiddenLeft" alt="">
+        <img src="assets/img/coca.png" class="about__img2 hiddenRight" alt="">
     </section>
 
     <section class="products" id="products">
         <h2><i>Nuestros Productos</i></h2>
 
-        <div class="product__div">
+        <div class="product__div hiddenLeft">
             <div class="product__img">
                 <img src="assets/img/combo1.jpeg" alt="">
             </div>
             <div class="product__info">
-                <h3>hamburguesa con queso</h3>
+                <h3 class="productName">hamburguesa con queso</h3>
                 <h5>(porcion de papas incluida)</h5>
                 <div class="info__bottom">
-                    <span>130$</span>
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="price">$130</span>
+                    <i class="fa-solid fa-cart-shopping addCart"></i>
                 </div>
 
             </div>
         </div>
-        <div class="product__div">
+        <div class="product__div hiddenRight">
             <div class="product__img">
                 <img src="assets/img/combo2.jpeg" alt="">
             </div>
             <div class="product__info">
-                <h3>Hot Dog</h3>
+                <h3 class="productName">Hot Dog</h3>
                 <h5>(porcion de papas incluida)</h5>
                 <div class="info__bottom">
-                    <span>95$</span>
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="price">$95</span>
+                    <i class="fa-solid fa-cart-shopping addCart"></i>
                 </div>
 
             </div>
         </div>
-        <div class="product__div">
+        <div class="product__div hiddenLeft">
             <div class="product__img">
                 <img src="assets/img/combo1.jpeg" alt="">
             </div>
             <div class="product__info">
-                <h3>hamburguesa doble carne</h3>
+                <h3 class="productName">hamburguesa doble carne</h3>
                 <h5>(porcion de papas incluida)</h5>
                 <div class="info__bottom">
-                    <span>155$</span>
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="price">$155</span>
+                    <i class="fa-solid fa-cart-shopping addCart"></i>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <section id="findus" class="findus">
+    <section id="findus" class="findus hiddenLeft">
         <div class="findus__container">
             <h2><i>Encuentranos!!!</i></h2>
             <iframe
@@ -117,16 +117,32 @@
                 style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="container__footer">
-                <a href="#">siguenos en facebook  <i class="fa-brands fa-facebook"></i></a>
+                <a href="#">siguenos en facebook <i class="fa-brands fa-facebook"></i></a>
             </div>
 
         </div>
 
     </section>
 
-    <footer class="footer">
-        <p>All Rights Reserved By Pogo</p>
-    </footer>
+    <div class="cartDiv">
+        <i class="fa-solid fa-cart-shopping" id="cart"></i>
+        <h2>Tu Carrito</h2>
+
+        <div class="cartProducs"></div>
+
+        <button class="pay" id="pay">
+            <svg viewBox="0 0 16 16" class="bi bi-cart-check" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+                fill="#fff">
+                <path
+                    d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z">
+                </path>
+                <path
+                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                </path>
+            </svg>
+            <p class="text">Buy Now</p>
+        </button>
+    </div>
 
 
     <a href="#"><i class="fa-brands fa-whatsapp" id="whatsapp" style="color: #81b413;"></i></a>
